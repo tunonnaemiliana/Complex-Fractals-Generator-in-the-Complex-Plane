@@ -11,6 +11,9 @@ You must have processing installed in your computer.
 To execute this sketch just:
 
 -clone the repository or download a snapshot
+
 -open the fractals generator directory
+
 -oper button.pde or fractals_genetor.pde with processing
+
 -have fun
