@@ -16,6 +16,6 @@ To execute this sketch just:
 
 -open the fractals generator directory
 
--oper button.pde or fractals_genetor.pde with processing
+-open button.pde or fractals_genetor.pde with processing
 
 -have fun
