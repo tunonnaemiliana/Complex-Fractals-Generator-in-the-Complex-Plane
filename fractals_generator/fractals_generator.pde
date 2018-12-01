@@ -36,7 +36,7 @@ void setup() {
   frameRate(300);
   rangeY = (rangeX * height) / width;
   resetXY();
-  //img = loadImage("img.png");
+  img = loadImage("img.png");
   guiController = new GUIController(this);
   textField = new IFTextField("Text Field", 25, 30, 150);
   ifLabel = new IFLabel("", 25, 70);
@@ -126,8 +126,8 @@ void draw() {
     else 
       m+=0.02;
     background(m,127,127);
-    text("multibrot generator", width/4,height/2);
-    //image(img,width/4,height/2);
+    //text("multibrot generator", width/4,height/2);
+    image(img,width/4,height/2);
     drawButton.display();
   }
   //println(frameRate);
