@@ -31,12 +31,12 @@ float writtenPower=0;
 PImage img;
 
 void setup() {
-  fullScreen();
+  fullScreen(2);
   colorMode(HSB, COLORS);
   frameRate(300);
   rangeY = (rangeX * height) / width;
   resetXY();
-  img = loadImage("img.png");
+  //img = loadImage("img.png");
   guiController = new GUIController(this);
   textField = new IFTextField("Text Field", 25, 30, 150);
   ifLabel = new IFLabel("", 25, 70);
@@ -120,13 +120,14 @@ void draw() {
     }
   }else{
     stroke(0);
-    textSize(16);
+    textSize(32);
     if(m>=16)
       m=0;
     else 
       m+=0.02;
     background(m,127,127);
-    image(img,width/4,height/2);
+    text("multibrot generator", width/4,height/2);
+    //image(img,width/4,height/2);
     drawButton.display();
   }
   //println(frameRate);
